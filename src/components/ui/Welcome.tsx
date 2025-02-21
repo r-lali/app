@@ -12,7 +12,7 @@ function Welcome() {
         <h1 className="text-2xl font-bold text-gray-800">Shopapp</h1>
       </div>
       <Button asChild className="mt-6">
-        <Link href="./product">Go to product</Link>
+        <Link href="./products">Go to product</Link>
       </Button>
     </div>
   );

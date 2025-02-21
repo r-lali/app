@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
+import { MonitorSmartphone, ShoppingCart } from 'lucide-react';
+import Link from 'next/link';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -27,7 +29,21 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="px-20 mt-20">{children}</div>
+        <main className='flex justify-between flex-col min-h-screen'>
+          <header className='flex justify-between items-center shadow-xl bg-white h-16 w-full px-24 fixed z-20'>
+            <div className='flex items-center gap-3'>
+              <MonitorSmartphone/>
+              <Link href="/" className='font-bold text-2xl'>Sopapp</Link>
+            </div>
+            <div>
+              <ShoppingCart/>
+            </div>
+          </header>
+          <div className="px-20 mt-20">{children}</div>
+        <footer className='bg-black w-full h-10 text-white flex justify-center items-center'>
+          <p>info@donyayelee.com</p>
+        </footer>
+        </main>
       </body>
     </html>
   );
