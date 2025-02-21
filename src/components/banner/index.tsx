@@ -11,17 +11,23 @@ import {
   CardContent,
 } from '@/components/ui/';
 
-import IMG1 from './image/0x0.webp';
+import IMG1 from './image/IMG.1.jpg';
+import IMG2 from './image/IMG.2.webp';
+import IMG3 from './image/IMG.3.jpg';
+import IMG4 from './image/IMG.4.jpg';
+
+
+
 
 function Banner() {
   return (
-    <Carousel className="w-full object-cover">
+    <Carousel className="w-full">
       <CarouselContent>
-        {[IMG1].map((image, index) => (
+        {[IMG1,IMG2,IMG3,IMG4].map((image, index) => (
           <CarouselItem key={index}>
             <div className="p-1">
               <Card>
-                <CardContent className="relative aspect-square w-full h-[500px] flex items-center justify-center p-6">
+                <CardContent className="relative aspect-square h-[900px] w-full flex items-center justify-center p-6">
                   <Image
                     src={image}
                     alt="banner"
