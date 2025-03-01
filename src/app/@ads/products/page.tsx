@@ -20,14 +20,8 @@ const Ads = () => {
           <Button>Buy Now</Button>
         </CardFooter>
       </div>
-      <Image
-        src="/mock/IPHONE.jfif"
-        width={300}
-        height={200}
-        alt="ads"
-        priority
-        className="rounded-tr-lg rounded-br-lg"
-      />
+      <Image src="/mock/IPHONE.jfif" width={300} height={200} alt="ads" priority />
+
     </Card>
   );
 };

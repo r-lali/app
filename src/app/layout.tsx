@@ -3,7 +3,6 @@ import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import { MonitorSmartphone, ShoppingCart } from 'lucide-react';
 import Link from 'next/link';
-import AdsDefault from './@ads/default';
 
 
 const geistSans = Geist({
@@ -27,7 +26,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
   ads?: React.ReactNode;
-}>) {
+}>)
+
+ {
   return (
     <html lang="en">
       <body
@@ -45,7 +46,7 @@ export default function RootLayout({
           </header>
           <div className="px-20 mt-20">{children}</div>
           <div className='my-10 mx-auto flex justify-center'> 
-          {ads ?? <AdsDefault />}
+           {ads}
             </div>
         <footer className='bg-black w-full h-10 text-white flex justify-center items-center'>
           <p>info@donyayelee.com</p>

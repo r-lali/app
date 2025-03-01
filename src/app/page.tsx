@@ -5,7 +5,6 @@ export default function Home() {
     <div className="flex flex-col justify-center items-center h-screen ">
       <Banner />
       <Welcome />
-      {/* <Ads/> */}
     </div>
   );
 }
