@@ -7,7 +7,7 @@ function ProductlistNum() {
       {
         DATA.map(item => {
           return (
-            <ProductItem product={item}/>
+            <ProductItem  product={item}/>
           )
         })
       }
